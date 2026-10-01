@@ -1,0 +1,6 @@
+{
+  "name": "Pelkan Delives",
+  "description": "Mobile-first zero-app transit and market sourcing in Kano, Nigeria with direct WhatsApp routing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

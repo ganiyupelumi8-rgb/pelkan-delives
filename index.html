@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Pelkan Delives | Kano Pooled Transit & Market Sourcing</title>
+    <meta name="description" content="Zero-app pooled transit and market sourcing in Kano, Nigeria. Quick WhatsApp dispatch for Kantin Kwari, Sabon Gari, Farm Center, BUK campuses, and all 44 LGAs." />
+    
+    <!-- Open Graph & Meta -->
+    <meta property="og:title" content="Pelkan Delives | Kano Transit & Market Sourcing" />
+    <meta property="og:description" content="Send it smart. Move it together. Zero-app pooled transit and market sourcing at local rates across Kano." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#b91c1c" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        if (window.google && window.google.translate) {
+          new window.google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'en,ha,ig,yo',
+            layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+          }, 'google_translate_element');
+        }
+      }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async defer></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <!-- Top Announcement Bar -->
+    <div class="top-notice" id="top-notice-bar">
+      <span data-i18n="top_notice">📍 Operating Live in Kano State: Kwari, Sabon Gari, Farm Center, BUK & City Routes</span>
+      <span aria-hidden="true">·</span>
+      <a href="tel:+2347017641538">📞 0701 764 1538</a>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#" class="brand-wrapper" aria-label="Pelkan Delives Home">
+          <div class="brand-icon" aria-hidden="true">P</div>
+          <div class="brand-text">
+            <h1>PELKAN <span>DELIVES</span></h1>
+            <div class="brand-tagline" data-i18n="brand_tagline">Kano Transit & Market Concierge</div>
+          </div>
+        </a>
+
+        <!-- Header Actions: Hybrid Language Switcher (EN, Hausa, Igbo, Yorùbá, Pidgin) -->
+        <div class="header-actions">
+          <div class="lang-selector-wrap">
+            <div class="lang-chips" role="group" aria-label="Language selection">
+              <button type="button" class="lang-chip-btn active" data-lang="en" title="English">EN</button>
+              <button type="button" class="lang-chip-btn" data-lang="ha" title="Harshen Hausa">Hausa</button>
+              <button type="button" class="lang-chip-btn" data-lang="ig" title="Asụsụ Igbo">Igbo</button>
+              <button type="button" class="lang-chip-btn" data-lang="yo" title="Èdè Yorùbá">Yorùbá</button>
+              <button type="button" class="lang-chip-btn" data-lang="pcm" title="Nigerian Pidgin (Naija)">Pidgin</button>
+            </div>
+          </div>
+          <!-- Google Translate Widget Embed Point -->
+          <div id="google_translate_element" aria-label="Google Translate Widget"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-pill" data-i18n="hero_pill">
+          <span>🇳🇬 Kano State Local Dispatch • Zero-App Required</span>
+        </div>
+        <h2 class="hero-title">
+          <span data-i18n="hero_title_1">Send it smart.</span> <br />
+          <span class="highlight" data-i18n="hero_title_2">Move it together.</span>
+        </h2>
+        <p class="hero-subtitle" data-i18n="hero_sub">
+          Pooled transit and market sourcing at local rates. No app downloads, no passwords, no hassle. Direct rider routing to WhatsApp.
+        </p>
+
+        <div class="hero-badges">
+          <span class="hero-badge-item" data-i18n="badge_nosignup">⚡ No Sign-up</span>
+          <span class="hero-badge-item" data-i18n="badge_riders">🛵 Local Kano Riders</span>
+          <span class="hero-badge-item" data-i18n="badge_whatsapp">💬 WhatsApp Checkout</span>
+          <span class="hero-badge-item" data-i18n="badge_fares">💰 Pooled Fares in ₦</span>
+        </div>
+      </section>
+
+      <!-- Service Toggle Section -->
+      <section class="service-toggle-section" aria-labelledby="service-heading">
+        <div class="section-label" id="service-heading">
+          <span data-i18n="service_choose_title">Choose Service Type (Zaɓi Aiki)</span>
+          <span class="form-label-hint" data-i18n="service_choose_hint">Tap to switch</span>
+        </div>
+
+        <div class="service-cards-grid" role="radiogroup" aria-label="Select delivery service">
+          <!-- Option A: Buy & Source for Me -->
+          <button
+            type="button"
+            class="service-card selected"
+            id="card-service-source"
+            role="radio"
+            aria-checked="true"
+            tabindex="0"
+          >
+            <div class="badge-selected">✓</div>
+            <div class="service-card-icon" aria-hidden="true">🛍️</div>
+            <div class="service-card-title" data-i18n="service_source_title">Buy & Source for Me</div>
+            <div class="service-card-sub" data-i18n="service_source_sub">Market Concierge: Kwari, Sabon Gari, Farm Center, Kurmi, Dawanau</div>
+          </button>
+
+          <!-- Option B: Pick Up & Deliver Package -->
+          <button
+            type="button"
+            class="service-card"
+            id="card-service-dispatch"
+            role="radio"
+            aria-checked="false"
+            tabindex="0"
+          >
+            <div class="badge-selected">✓</div>
+            <div class="service-card-icon" aria-hidden="true">📦</div>
+            <div class="service-card-title" data-i18n="service_dispatch_title">Pick Up & Deliver</div>
+            <div class="service-card-sub" data-i18n="service_dispatch_sub">Direct Dispatch: Parcels, food, documents across town</div>
+          </button>
+        </div>
+
+        <div class="service-hint-box" id="service-hint-box">
+          <span aria-hidden="true">💡</span>
+          <div id="service-hint-text">
+            <strong>🛍️ Market Concierge Mode:</strong> Our rider visits Kantin Kwari, Sabon Gari, Farm Center, Kurmi, or Dawanau to inspect, negotiate, and purchase items on your behalf before delivering directly to you.
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Order Form Card -->
+      <section class="form-card" aria-labelledby="order-form-title">
+        <div class="form-header">
+          <h3 class="form-header-title" id="order-form-title">
+            <span data-i18n="form_header_title">📝 Dispatch Request Details</span>
+          </h3>
+          <span class="zero-app-tag">100% Zero-App</span>
+        </div>
+
+        <!-- Quick Sample Fillers for User Convenience -->
+        <div style="margin-bottom: 16px;">
+          <div class="form-label" style="font-size: 0.75rem; margin-bottom: 4px; color: var(--light-slate);">
+            <span data-i18n="quick_sample_title">Quick Sample Test (Danna don gwada cikawa):</span>
+          </div>
+          <div class="quick-fill-chips">
+            <button type="button" class="quick-chip" id="chip-sample-kwari" data-i18n="chip_sample_kwari">🛍️ Kwari Atamfa Run</button>
+            <button type="button" class="quick-chip" id="chip-sample-buk" data-i18n="chip_sample_buk">📦 BUK Old to New Campus</button>
+            <button type="button" class="quick-chip" id="chip-sample-dawanau" data-i18n="chip_sample_dawanau">🌾 Dawanau Grain Bulk</button>
+          </div>
+        </div>
+
+        <!-- Form Element -->
+        <form id="delives-order-form" novalidate>
+          <div class="form-grid">
+            <!-- Row 1: Name and Phone -->
+            <div class="form-row-2">
+              <div class="form-group" id="group-name">
+                <label for="customer-name" class="form-label">
+                  <span id="label-name-text"><span data-i18n="label_name">Your Full Name (Sunanka)</span> <span class="required-dot">*</span></span>
+                </label>
+                <div class="input-wrapper">
+                  <span class="input-icon" aria-hidden="true">👤</span>
+                  <input
+                    type="text"
+                    id="customer-name"
+                    name="name"
+                    class="form-control has-icon"
+                    placeholder="e.g. Ibrahim Sani / Fatima Bello"
+                    required
+                    autocomplete="name"
+                  />
+                </div>
+                <div class="field-error-msg">Please enter your name</div>
+              </div>
+
+              <div class="form-group" id="group-phone">
+                <label for="customer-phone" class="form-label">
+                  <span id="label-phone-text"><span data-i18n="label_phone">WhatsApp Phone (Lambar Waya)</span> <span class="required-dot">*</span></span>
+                </label>
+                <div class="input-wrapper">
+                  <span class="input-icon" aria-hidden="true">📞</span>
+                  <input
+                    type="tel"
+                    id="customer-phone"
+                    name="phone"
+                    class="form-control has-icon"
+                    placeholder="e.g. 08012345678 or 070..."
+                    required
+                    autocomplete="tel"
+                  />
+                </div>
+                <div class="field-error-msg">Please enter a valid phone number</div>
+              </div>
+            </div>
+
+            <!-- Row 2: Comprehensive Kano Pickup Location Dropdown -->
+            <div class="form-group" id="group-pickup">
+              <label for="pickup-location" class="form-label">
+                <span id="label-pickup">Market to Buy From <span class="required-dot">*</span></span>
+                <span class="form-label-hint" data-i18n="label_pickup_hint">Kano State Location</span>
+              </label>
+              <div class="input-wrapper">
+                <span class="input-icon" aria-hidden="true">📍</span>
+                <select id="pickup-location" name="pickup" class="form-control has-icon" required>
+                  <option value="" disabled selected>-- Select Kano Pickup Point --</option>
+                  
+                  <optgroup label="🛍️ Major Kano Markets (Kasuwan Kano)">
+                    <option value="Farm Center (GSM Market)">Farm Center (GSM Market)</option>
+                    <option value="Sabon Gari Market">Sabon Gari Market</option>
+                    <option value="Kantin Kwari Market">Kantin Kwari Market</option>
+                    <option value="Kofar Wambai Market">Kofar Wambai Market</option>
+                    <option value="Kurmi Market">Kurmi Market</option>
+                    <option value="Dawanau Market">Dawanau Market</option>
+                    <option value="Yankaba Market">Yankaba Market</option>
+                    <option value="Na'ibawa 'Yan Lemo">Na'ibawa 'Yan Lemo</option>
+                    <option value="Singer Market">Singer Market</option>
+                    <option value="Kofar Ruwa Market">Kofar Ruwa Market</option>
+                    <option value="Sharada Market">Sharada Market</option>
+                    <option value="Galadima Market">Galadima Market</option>
+                  </optgroup>
+
+                  <optgroup label="🎓 Universities & Higher Institutions">
+                    <option value="Bayero University Kano (BUK New Campus)">Bayero University Kano (BUK New Campus)</option>
+                    <option value="Bayero University Kano (BUK Old Campus)">Bayero University Kano (BUK Old Campus)</option>
+                    <option value="Yusuf Maitama Sule University (Northwest)">Yusuf Maitama Sule University (Northwest)</option>
+                    <option value="Kano State Polytechnic">Kano State Polytechnic</option>
+                    <option value="Aliko Dangote University of Science and Technology (KUST Wudil)">Aliko Dangote University of Science and Technology (KUST Wudil)</option>
+                    <option value="Nigeria Police Academy Wudil">Nigeria Police Academy Wudil</option>
+                    <option value="Maryam Abacha American University (MAAUN)">Maryam Abacha American University (MAAUN)</option>
+                    <option value="Skyline University">Skyline University</option>
+                    <option value="Baba Ahmed University">Baba Ahmed University</option>
+                    <option value="Federal College of Education (FCE Kano)">Federal College of Education (FCE Kano)</option>
+                    <option value="Federal College of Education (Technical) Bichi">Federal College of Education (Technical) Bichi</option>
+                    <option value="Sa'adatu Rimi University of Education (Danfodio)">Sa'adatu Rimi University of Education (Danfodio)</option>
+                    <option value="Aminu Kano College of Islamic and Legal Studies">Aminu Kano College of Islamic and Legal Studies</option>
+                    <option value="Kano State School of Hygiene">Kano State School of Hygiene</option>
+                    <option value="Kano State School of Health Technology">Kano State School of Health Technology</option>
+                    <option value="Audu Bako College of Agriculture Danbatta">Audu Bako College of Agriculture Danbatta</option>
+                    <option value="Rabiu Musa Kwankwaso College of Advanced and Remedial Studies">Rabiu Musa Kwankwaso College of Advanced and Remedial Studies</option>
+                  </optgroup>
+
+                  <optgroup label="🏙️ Major Commercial Corridors & City Hubs">
+                    <option value="Zoo Road">Zoo Road</option>
+                    <option value="State Road">State Road</option>
+                    <option value="Zaria Road">Zaria Road</option>
+                    <option value="Hadejia Road">Hadejia Road</option>
+                    <option value="Katsina Road">Katsina Road</option>
+                    <option value="Maiduguri Road">Maiduguri Road</option>
+                    <option value="Gidan Murtala">Gidan Murtala</option>
+                    <option value="Gwammaja">Gwammaja</option>
+                  </optgroup>
+
+                  <optgroup label="🏛️ All 44 Local Government Areas (LGAs) of Kano State">
+                    <option value="Ajingi LGA">Ajingi</option>
+                    <option value="Albasu LGA">Albasu</option>
+                    <option value="Bagwai LGA">Bagwai</option>
+                    <option value="Bebeji LGA">Bebeji</option>
+                    <option value="Bichi LGA">Bichi</option>
+                    <option value="Bunkure LGA">Bunkure</option>
+                    <option value="Dala LGA">Dala</option>
+                    <option value="Dambatta LGA">Dambatta</option>
+                    <option value="Dawakin Kudu LGA">Dawakin Kudu</option>
+                    <option value="Dawakin Tofa LGA">Dawakin Tofa</option>
+                    <option value="Doguwa LGA">Doguwa</option>
+                    <option value="Fagge LGA">Fagge</option>
+                    <option value="Gabasawa LGA">Gabasawa</option>
+                    <option value="Garko LGA">Garko</option>
+                    <option value="Garun Mallam LGA">Garun Mallam</option>
+                    <option value="Gaya LGA">Gaya</option>
+                    <option value="Gezawa LGA">Gezawa</option>
+                    <option value="Gwale LGA">Gwale</option>
+                    <option value="Gwarzo LGA">Gwarzo</option>
+                    <option value="Kabo LGA">Kabo</option>
+                    <option value="Kano Municipal LGA">Kano Municipal</option>
+                    <option value="Karaye LGA">Karaye</option>
+                    <option value="Kibiya LGA">Kibiya</option>
+                    <option value="Kiru LGA">Kiru</option>
+                    <option value="Kumbotso LGA">Kumbotso</option>
+                    <option value="Kunchi LGA">Kunchi</option>
+                    <option value="Kura LGA">Kura</option>
+                    <option value="Madobi LGA">Madobi</option>
+                    <option value="Makoda LGA">Makoda</option>
+                    <option value="Minjibir LGA">Minjibir</option>
+                    <option value="Nassarawa LGA">Nassarawa</option>
+                    <option value="Rano LGA">Rano</option>
+                    <option value="Rimin Gado LGA">Rimin Gado</option>
+                    <option value="Rogo LGA">Rogo</option>
+                    <option value="Shanono LGA">Shanono</option>
+                    <option value="Sumaila LGA">Sumaila</option>
+                    <option value="Takai LGA">Takai</option>
+                    <option value="Tarauni LGA">Tarauni</option>
+                    <option value="Tofa LGA">Tofa</option>
+                    <option value="Tsanyawa LGA">Tsanyawa</option>
+                    <option value="Tudun Wada LGA">Tudun Wada</option>
+                    <option value="Ungogo LGA">Ungogo</option>
+                    <option value="Warawa LGA">Warawa</option>
+                    <option value="Wudil LGA">Wudil</option>
+                  </optgroup>
+
+                  <optgroup label="📍 Custom / Specific Junction">
+                    <option value="Other">Other (Please type exact junction in details below)</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="field-error-msg">Please select a pickup point</div>
+            </div>
+
+            <!-- Specific Pickup Landmark / Stall number -->
+            <div class="form-group" id="pickup-landmark-wrap">
+              <label for="pickup-landmark" class="form-label">
+                <span data-i18n="pickup_landmark_label">Specific Pickup Landmark, Stall # or Gate</span>
+                <span class="form-label-hint">Optional</span>
+              </label>
+              <input
+                type="text"
+                id="pickup-landmark"
+                name="pickupLandmark"
+                class="form-control"
+                placeholder="e.g. Line 3 Shop 14, Near First Bank Gate, or specific plaza name"
+              />
+            </div>
+
+            <!-- Row 3: Comprehensive Kano Drop-off Location Dropdown -->
+            <div class="form-group" id="group-dropoff">
+              <label for="dropoff-location" class="form-label">
+                <span id="label-dropoff"><span data-i18n="label_dropoff">Drop-off Destination in Kano</span> <span class="required-dot">*</span></span>
+                <span class="form-label-hint" data-i18n="label_dropoff_hint">Where should we deliver?</span>
+              </label>
+              <div class="input-wrapper">
+                <span class="input-icon" aria-hidden="true">🎯</span>
+                <select id="dropoff-location" name="dropoff" class="form-control has-icon" required>
+                  <option value="" disabled selected>-- Select Kano Drop-off Destination --</option>
+                  
+                  <optgroup label="🎓 Universities & Higher Institutions">
+                    <option value="Bayero University Kano (BUK New Campus)">Bayero University Kano (BUK New Campus)</option>
+                    <option value="Bayero University Kano (BUK Old Campus)">Bayero University Kano (BUK Old Campus)</option>
+                    <option value="Yusuf Maitama Sule University (Northwest)">Yusuf Maitama Sule University (Northwest)</option>
+                    <option value="Kano State Polytechnic">Kano State Polytechnic</option>
+                    <option value="Aliko Dangote University of Science and Technology (KUST Wudil)">Aliko Dangote University of Science and Technology (KUST Wudil)</option>
+                    <option value="Nigeria Police Academy Wudil">Nigeria Police Academy Wudil</option>
+                    <option value="Maryam Abacha American University (MAAUN)">Maryam Abacha American University (MAAUN)</option>
+                    <option value="Skyline University">Skyline University</option>
+                    <option value="Baba Ahmed University">Baba Ahmed University</option>
+                    <option value="Federal College of Education (FCE Kano)">Federal College of Education (FCE Kano)</option>
+                    <option value="Federal College of Education (Technical) Bichi">Federal College of Education (Technical) Bichi</option>
+                    <option value="Sa'adatu Rimi University of Education (Danfodio)">Sa'adatu Rimi University of Education (Danfodio)</option>
+                    <option value="Aminu Kano College of Islamic and Legal Studies">Aminu Kano College of Islamic and Legal Studies</option>
+                    <option value="Kano State School of Hygiene">Kano State School of Hygiene</option>
+                    <option value="Kano State School of Health Technology">Kano State School of Health Technology</option>
+                    <option value="Audu Bako College of Agriculture Danbatta">Audu Bako College of Agriculture Danbatta</option>
+                    <option value="Rabiu Musa Kwankwaso College of Advanced and Remedial Studies">Rabiu Musa Kwankwaso College of Advanced and Remedial Studies</option>
+                  </optgroup>
+
+                  <optgroup label="🏙️ Major Commercial Corridors & City Hubs">
+                    <option value="Zoo Road">Zoo Road</option>
+                    <option value="State Road">State Road</option>
+                    <option value="Zaria Road">Zaria Road</option>
+                    <option value="Hadejia Road">Hadejia Road</option>
+                    <option value="Katsina Road">Katsina Road</option>
+                    <option value="Maiduguri Road">Maiduguri Road</option>
+                    <option value="Gidan Murtala">Gidan Murtala</option>
+                    <option value="Gwammaja">Gwammaja</option>
+                  </optgroup>
+
+                  <optgroup label="🛍️ Major Kano Markets">
+                    <option value="Farm Center (GSM Market)">Farm Center (GSM Market)</option>
+                    <option value="Sabon Gari Market">Sabon Gari Market</option>
+                    <option value="Kantin Kwari Market">Kantin Kwari Market</option>
+                    <option value="Kofar Wambai Market">Kofar Wambai Market</option>
+                    <option value="Kurmi Market">Kurmi Market</option>
+                    <option value="Dawanau Market">Dawanau Market</option>
+                    <option value="Yankaba Market">Yankaba Market</option>
+                    <option value="Na'ibawa 'Yan Lemo">Na'ibawa 'Yan Lemo</option>
+                    <option value="Singer Market">Singer Market</option>
+                    <option value="Kofar Ruwa Market">Kofar Ruwa Market</option>
+                    <option value="Sharada Market">Sharada Market</option>
+                    <option value="Galadima Market">Galadima Market</option>
+                  </optgroup>
+
+                  <optgroup label="🏛️ All 44 Local Government Areas (LGAs) of Kano State">
+                    <option value="Tarauni LGA">Tarauni</option>
+                    <option value="Nassarawa LGA">Nassarawa</option>
+                    <option value="Fagge LGA">Fagge</option>
+                    <option value="Gwale LGA">Gwale</option>
+                    <option value="Dala LGA">Dala</option>
+                    <option value="Kano Municipal LGA">Kano Municipal</option>
+                    <option value="Kumbotso LGA">Kumbotso</option>
+                    <option value="Ungogo LGA">Ungogo</option>
+                    <option value="Dawakin Kudu LGA">Dawakin Kudu</option>
+                    <option value="Dawakin Tofa LGA">Dawakin Tofa</option>
+                    <option value="Wudil LGA">Wudil</option>
+                    <option value="Bichi LGA">Bichi</option>
+                    <option value="Kura LGA">Kura</option>
+                    <option value="Ajingi LGA">Ajingi</option>
+                    <option value="Albasu LGA">Albasu</option>
+                    <option value="Bagwai LGA">Bagwai</option>
+                    <option value="Bebeji LGA">Bebeji</option>
+                    <option value="Bunkure LGA">Bunkure</option>
+                    <option value="Dambatta LGA">Dambatta</option>
+                    <option value="Doguwa LGA">Doguwa</option>
+                    <option value="Gabasawa LGA">Gabasawa</option>
+                    <option value="Garko LGA">Garko</option>
+                    <option value="Garun Mallam LGA">Garun Mallam</option>
+                    <option value="Gaya LGA">Gaya</option>
+                    <option value="Gezawa LGA">Gezawa</option>
+                    <option value="Gwarzo LGA">Gwarzo</option>
+                    <option value="Kabo LGA">Kabo</option>
+                    <option value="Karaye LGA">Karaye</option>
+                    <option value="Kibiya LGA">Kibiya</option>
+                    <option value="Kiru LGA">Kiru</option>
+                    <option value="Kunchi LGA">Kunchi</option>
+                    <option value="Madobi LGA">Madobi</option>
+                    <option value="Makoda LGA">Makoda</option>
+                    <option value="Minjibir LGA">Minjibir</option>
+                    <option value="Rano LGA">Rano</option>
+                    <option value="Rimin Gado LGA">Rimin Gado</option>
+                    <option value="Rogo LGA">Rogo</option>
+                    <option value="Shanono LGA">Shanono</option>
+                    <option value="Sumaila LGA">Sumaila</option>
+                    <option value="Takai LGA">Takai</option>
+                    <option value="Tofa LGA">Tofa</option>
+                    <option value="Tsanyawa LGA">Tsanyawa</option>
+                    <option value="Tudun Wada LGA">Tudun Wada</option>
+                    <option value="Warawa LGA">Warawa</option>
+                  </optgroup>
+
+                  <optgroup label="📍 Custom / Specific Junction">
+                    <option value="Other">Other (Please type exact junction in details below)</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="field-error-msg">Please select a drop-off location</div>
+            </div>
+
+            <!-- Specific Drop-off Landmark / House number -->
+            <div class="form-group" id="dropoff-landmark-wrap">
+              <label for="dropoff-landmark" class="form-label">
+                <span data-i18n="dropoff_landmark_label">Specific Drop-off Landmark, House # or Street</span>
+                <span class="form-label-hint">Optional</span>
+              </label>
+              <input
+                type="text"
+                id="dropoff-landmark"
+                name="dropoffLandmark"
+                class="form-control"
+                placeholder="e.g. Opposite Central Mosque, House 15, Near Water Board, Hostel A Room 12"
+              />
+            </div>
+
+            <!-- Row 4: Parcel Size / Shopping List Details -->
+            <div class="form-group" id="group-details">
+              <label for="parcel-details" class="form-label">
+                <span id="label-details">Shopping List & Sourcing Instructions <span class="required-dot">*</span></span>
+              </label>
+              <textarea
+                id="parcel-details"
+                name="details"
+                class="form-control"
+                placeholder="List items with details (e.g. 2 bundles Super English Wax from Kwari Line 4, 1 tin pure shea butter, or contact phone of stall owner)"
+                required
+              ></textarea>
+              <div class="input-counter" id="details-counter">0 characters</div>
+              <div class="field-error-msg">Please enter your item list or package details</div>
+            </div>
+
+            <!-- Transit Option / Urgency Toggle -->
+            <div class="form-group">
+              <label class="form-label">
+                <span data-i18n="label_timing">Preferred Transit Speed (Saurin Aikawa)</span>
+              </label>
+              <div class="delivery-options-grid">
+                <div class="timing-card active" data-timing="pooled">
+                  <div class="timing-title">
+                    <span data-i18n="timing_pooled_title">🤝 Pooled Economy</span>
+                    <span style="color: var(--success-green); font-size: 0.72rem;" data-i18n="timing_pooled_badge">Best Value</span>
+                  </div>
+                  <div class="timing-sub" data-i18n="timing_pooled_sub">Combined route delivery across Kano (Delivered today)</div>
+                </div>
+
+                <div class="timing-card" data-timing="express">
+                  <div class="timing-title">
+                    <span data-i18n="timing_express_title">⚡ Express Direct</span>
+                    <span style="color: var(--primary-red); font-size: 0.72rem;" data-i18n="timing_express_badge">Fastest</span>
+                  </div>
+                  <div class="timing-sub" data-i18n="timing_express_sub">Single dedicated rider dispatched straight away</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dynamic Estimated Rate Display -->
+            <div class="rate-preview-box">
+              <div class="rate-preview-info">
+                <span class="rate-label" data-i18n="rate_label">Estimated Kano Route Fare</span>
+                <div class="rate-amount" id="est-rate-amount">
+                  ₦1,200 - <span>₦1,800</span>
+                </div>
+                <span class="rate-subtext" data-i18n="rate_subtext">Base local fare estimation (Final fare agreed on WhatsApp)</span>
+              </div>
+              <div class="rate-tag" id="est-rate-tag">
+                Pooled Transit
+              </div>
+            </div>
+
+            <!-- Submit Button (Crucial WhatsApp Routing Action) -->
+            <div class="submit-wrap">
+              <button type="submit" class="submit-btn-whatsapp" id="btn-submit-whatsapp">
+                <span data-i18n="btn_submit_text">Get Estimate via WhatsApp 💬</span>
+              </button>
+              <div class="submit-subtext">
+                <span data-i18n="submit_subtext">⚡ Opens WhatsApp directly with your formatted details ready to send.</span>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <!-- Live WhatsApp Message Preview & Copy Option -->
+        <div class="preview-collapsible">
+          <div class="preview-collapsible-header">
+            <span data-i18n="preview_header_title">👁️ WhatsApp Dispatch Template Preview</span>
+            <button type="button" class="preview-copy-btn" id="copy-preview-btn" data-i18n="btn_copy">📋 Copy Message</button>
+          </div>
+          <pre class="preview-code-box" id="whatsapp-preview-text">*🔴 PELKAN DELIVES - NEW DISPATCH REQUEST*
+----------------------------------------
+*Service:* 🛍️ Buy & Source for Me (Market Concierge)
+*Customer:* [Customer Name]
+*Phone:* [Phone Number]
+
+*📍 Pickup / Market:* Not selected
+*🎯 Drop-off / Destination:* Not selected
+
+*📦 Details / Shopping List:*
+[No details entered yet]
+
+*⏱️ Preference:* 🤝 Standard Pooled (Best local rate - today)
+*💰 Est. Route Base:* ~₦1,200 - ₦1,800 (Kano local)
+----------------------------------------
+_Sent via Pelkan Delives Zero-App Portal_</pre>
+        </div>
+      </section>
+
+      <!-- Trust Pillars / Zero-App Guarantee -->
+      <section class="trust-strip" aria-label="Key features">
+        <div class="trust-item">
+          <div class="trust-item-icon" aria-hidden="true">🛵</div>
+          <div>
+            <strong data-i18n="trust_1_title">Kano Native Riders</strong><br />
+            <span data-i18n="trust_1_sub">Deep knowledge of Kwari & Sabon Gari lines.</span>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item-icon" aria-hidden="true">💸</div>
+          <div>
+            <strong data-i18n="trust_2_title">Transparent Fares</strong><br />
+            <span data-i18n="trust_2_sub">No hidden surges. Fair local transport rates.</span>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item-icon" aria-hidden="true">🔒</div>
+          <div>
+            <strong data-i18n="trust_3_title">Zero App Friction</strong><br />
+            <span data-i18n="trust_3_sub">No storage space wasted on heavy downloads.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kano Routes Guide Table -->
+      <section class="routes-section" aria-labelledby="routes-heading">
+        <h4 class="routes-title" id="routes-heading">
+          <span data-i18n="routes_title">📍 Popular Kano Route Fare Estimates</span>
+        </h4>
+        <div class="routes-grid">
+          <div class="route-card-item">
+            <span class="route-name">Kantin Kwari ⇄ BUK New Campus</span>
+            <span class="route-price">₦1,400 - ₦2,000</span>
+          </div>
+          <div class="route-card-item">
+            <span class="route-name">Farm Center ⇄ Tarauni</span>
+            <span class="route-price">₦800 - ₦1,200</span>
+          </div>
+          <div class="route-card-item">
+            <span class="route-name">Sabon Gari ⇄ Zoo Road</span>
+            <span class="route-price">₦900 - ₦1,300</span>
+          </div>
+          <div class="route-card-item">
+            <span class="route-name">Kurmi Market ⇄ KUST Wudil</span>
+            <span class="route-price">₦2,500 - ₦3,500</span>
+          </div>
+          <div class="route-card-item">
+            <span class="route-name">Dawanau ⇄ Nassarawa GRA</span>
+            <span class="route-price">₦1,500 - ₦2,200</span>
+          </div>
+          <div class="route-card-item">
+            <span class="route-name">BUK Old Campus ⇄ BUK New Campus</span>
+            <span class="route-price">₦800 - ₦1,200</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section class="how-it-works-section" aria-labelledby="how-heading">
+        <div class="section-label" id="how-heading" data-i18n="how_heading">How Pelkan Delives Works (Yadda Yake Aiki)</div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <h4 data-i18n="step_1_title">Fill Quick Form</h4>
+            <p data-i18n="step_1_desc">Select your market or pickup location and enter your item details.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <h4 data-i18n="step_2_title">Tap WhatsApp</h4>
+            <p data-i18n="step_2_desc">One tap routes your structured order straight to our dispatch line: 0701 764 1538.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <h4 data-i18n="step_3_title">Rider Dispatched</h4>
+            <p data-i18n="step_3_desc">Get instant confirmation, live rider contact, and real-time updates.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Customer Support & Feedback Section (Explicitly requested by user) -->
+      <section class="support-feedback-section" aria-labelledby="support-heading">
+        <div class="support-header">
+          <div class="support-icon" aria-hidden="true">💬</div>
+          <div>
+            <h3 class="support-title" id="support-heading" data-i18n="support_title">Customer Support & Feedback (Maganar Abokin Ciniki)</h3>
+            <p class="support-sub" data-i18n="support_sub">Have a complaint, suggestion, or opinion? We want to hear from you directly.</p>
+          </div>
+        </div>
+        <div class="support-body">
+          <p data-i18n="support_desc">
+            At Pelkan Delives, our mission is to make movement and market sourcing across Kano stress-free and affordable. Whether your rider was exceptional, you experienced a delay, or you have an idea to improve our service, please reach out to our management.
+          </p>
+          <div class="support-actions">
+            <a href="mailto:pelkanhaus@gmail.com?subject=Pelkan%20Delives%20Customer%20Support%20%26%20Feedback" class="support-email-btn" id="btn-support-email">
+              <span data-i18n="support_email_btn">✉️ Email Us: pelkanhaus@gmail.com</span>
+            </a>
+            <a href="https://wa.me/2347017641538?text=Hello%20Pelkan%20Delives%20Support%2C%20I%20have%20a%20complaint%20%2F%20suggestion%20%2F%20opinion" class="support-wa-btn" id="btn-support-wa" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="support_wa_btn">💬 WhatsApp Support & Feedback</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Accordion -->
+      <section class="faq-section" aria-labelledby="faq-heading">
+        <h4 class="faq-title" id="faq-heading" data-i18n="faq_heading">Frequently Asked Questions (Tambayoyin Da Aka Saba Yi)</h4>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>How does "Buy & Source for Me" work in Kantin Kwari, Farm Center, or Sabon Gari?</span>
+              <span aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              When you submit your shopping list, our trained market concierge rider heads directly to the designated market section. We inspect the goods, send you real-time photo/video confirmations on WhatsApp, confirm the shop prices with you, and purchase on your behalf before packaging and delivering.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>How do payments work? (Yadda ake biya)</span>
+              <span aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              For direct dispatch, you can pay the rider in cash or direct bank transfer upon pickup or delivery. For market sourcing, you transfer the agreed market purchase fund directly, and pay the transit fee upon safe delivery of your goods.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Why don't I need an app or account?</span>
+              <span aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              We built Pelkan Delives specifically for Kano's local commercial speed. You save phone memory, never have to remember passwords or login screens, and get direct 1-on-1 human communication via WhatsApp.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>What if my pickup or drop-off location is not listed in the dropdown?</span>
+              <span aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Choose "Other (Please type exact junction in details below)" in the dropdown and type your specific street, gate, or junction in the details field. Our riders cover all 44 LGAs across Kano State.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-hub-badge">Kano Commercial Transit Network</div>
+        <p><strong>Pelkan Delives</strong> · Send it smart. Move it together.</p>
+        <p style="margin-top: 4px; font-size: 0.72rem;">
+          Direct WhatsApp & Calls: <a href="https://wa.me/2347017641538" style="color: var(--primary-red); font-weight: 700;">+234 701 764 1538</a>
+          <span aria-hidden="true"> · </span>
+          Support Email: <a href="mailto:pelkanhaus@gmail.com" style="color: var(--primary-red); font-weight: 700;">pelkanhaus@gmail.com</a>
+        </p>
+        <p style="margin-top: 8px; color: #94a3b8; font-size: 0.7rem;">
+          Static zero-app deployment ready for Netlify, GitHub Pages, or any web hosting.
+        </p>
+      </footer>
+    </main>
+
+    <!-- Floating Contact Bar for Quick Mobile Access -->
+    <div class="bottom-contact-bar" aria-label="Quick contact bar">
+      <a href="tel:+2347017641538" class="bottom-call-btn">
+        <span>📞 Call Dispatch</span>
+      </a>
+      <a href="https://wa.me/2347017641538?text=Hello%20Pelkan%20Delives%2C%20I%20have%20an%20inquiry%20about%20a%20delivery%20in%20Kano" class="bottom-whatsapp-btn" target="_blank" rel="noopener noreferrer">
+        <span>💬 Chat on WhatsApp</span>
+      </a>
+    </div>
+
+    <!-- Script File -->
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
