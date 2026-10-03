@@ -1,11 +1,11 @@
 /**
  * Pelkan Delives - Kano Transit & Market Sourcing
  * Lightweight zero-dependency JavaScript engine
- * WhatsApp Routing target: 2347017641538
+ * WhatsApp Routing target: 2348150565192
  * Customer Support: pelkanhaus@gmail.com
  */
 
-const WHATSAPP_PHONE = '2347017641538';
+const WHATSAPP_PHONE = '2348150565192';
 const SUPPORT_EMAIL = 'pelkanhaus@gmail.com';
 
 // State
@@ -15,12 +15,12 @@ let currentLanguage = 'en';     // 'en', 'ha', 'ig', 'yo', 'pcm'
 
 // English Master Dictionary
 const ENGLISH_DICTIONARY = {
-  top_notice: '📍 Operating Live in Kano State: Kwari, Sabon Gari, Farm Center, BUK & City Routes',
-  brand_tagline: 'Kano Transit & Market Concierge',
+  top_notice: '📍 Launch Zones: Kwari, Sabon Gari, Farm Center, Zoo Road, BUK (Other areas: message us first!)',
+  brand_tagline: 'We shop Kantin Kwari, Sabon Gari and Farm Center for you and deliver in Kano',
   hero_pill: '🇳🇬 Kano State Local Dispatch • Zero-App Required',
-  hero_title_1: 'Send it smart.',
-  hero_title_2: 'Move it together.',
-  hero_sub: 'Pooled transit and market sourcing at local rates. No app downloads, no passwords, no hassle. Direct rider routing to WhatsApp.',
+  hero_title_1: 'Your order is handled',
+  hero_title_2: 'personally by Pelumi.',
+  hero_sub: 'Now taking early orders for local delivery and market runs. No app required—build your order below and check out directly via WhatsApp.',
   badge_nosignup: '⚡ No Sign-up',
   badge_riders: '🛵 Local Kano Riders',
   badge_whatsapp: '💬 WhatsApp Checkout',
@@ -79,7 +79,7 @@ const ENGLISH_DICTIONARY = {
   step_1_title: 'Fill Quick Form',
   step_1_desc: 'Select your market or pickup location and enter your item details.',
   step_2_title: 'Tap WhatsApp',
-  step_2_desc: 'One tap routes your structured order straight to our dispatch line: 0701 764 1538.',
+  step_2_desc: 'One tap routes your structured order straight to our dispatch line: 0815 056 5192.',
   step_3_title: 'Rider Dispatched',
   step_3_desc: 'Get instant confirmation, live rider contact, and real-time updates.',
   support_title: 'Customer Support & Feedback (Maganar Abokin Ciniki)',
@@ -92,12 +92,12 @@ const ENGLISH_DICTIONARY = {
 
 // Nigerian Pidgin Manual Translation Dictionary (Specialized Hybrid Switcher)
 const PIDGIN_DICTIONARY = {
-  top_notice: '📍 We dey live for Kano State: Kwari, Sabon Gari, Farm Center, BUK & inside town routes',
-  brand_tagline: 'Kano Transit & Market Concierge',
+  top_notice: '📍 Launch Zones: Kwari, Sabon Gari, Farm Center, Zoo Road, BUK (Other areas: text us first!)',
+  brand_tagline: 'We go shop for Kantin Kwari, Sabon Gari and Farm Center for you, con deliver am for Kano',
   hero_pill: '🇳🇬 Kano State Local Dispatch • You No Need Download Any App',
-  hero_title_1: 'Send am smart.',
-  hero_title_2: 'Carry am together.',
-  hero_sub: 'Shared transit and market sourcing at local price. No app to download, no password stress, no wahala. Direct rider connection for WhatsApp.',
+  hero_title_1: 'Your order dey handled',
+  hero_title_2: 'personally by Pelumi.',
+  hero_sub: 'We don dey take early orders for local delivery and market runs. No app wahala—build your order below make we chat for WhatsApp.',
   badge_nosignup: '⚡ No Sign-up Stress',
   badge_riders: '🛵 Kano Local Riders',
   badge_whatsapp: '💬 WhatsApp Direct Chat',
@@ -156,7 +156,7 @@ const PIDGIN_DICTIONARY = {
   step_1_title: 'Fill Quick Form',
   step_1_desc: 'Pick your market or pickup location and enter your item details.',
   step_2_title: 'Tap WhatsApp',
-  step_2_desc: 'One tap go send all your order details straight to our line: 0701 764 1538.',
+  step_2_desc: 'One tap go send all your order details straight to our line: 0815 056 5192.',
   step_3_title: 'Rider Go Move',
   step_3_desc: 'Get quick confirmation, rider number, and live update until package reach.',
   support_title: 'Customer Support & Feedback',
@@ -350,22 +350,22 @@ function calculateFareEstimate() {
     baseMax = 1500;
   }
 
-  // Concierge service fee for market sourcing
-  if (currentService === 'source') {
-    baseMin += 400;
-    baseMax += 600;
-  }
-
   // Express modifier
   if (currentUrgency === 'express') {
     baseMin = Math.round(baseMin * 1.3);
     baseMax = Math.round(baseMax * 1.3);
   }
 
+  let label = currentUrgency === 'express' ? 'Express Direct' : 'Pooled Economy';
+
+  if (currentService === 'source') {
+    label = 'Transit (Sourcing Fee applied on WhatsApp)';
+  }
+
   return {
     min: Math.round(baseMin / 50) * 50,
     max: Math.round(baseMax / 50) * 50,
-    label: currentUrgency === 'express' ? 'Express Direct' : 'Pooled Economy'
+    label: label
   };
 }
 
@@ -378,7 +378,7 @@ function updateEstimate() {
     rateDisplay.innerHTML = `₦${est.min.toLocaleString()} - <span>₦${est.max.toLocaleString()}</span>`;
   }
   if (rateTag) {
-    rateTag.textContent = `${est.label} (${currentService === 'source' ? 'Includes Sourcing' : 'Transit'})`;
+    rateTag.textContent = est.label;
   }
 }
 
@@ -426,10 +426,22 @@ function buildWhatsAppMessage() {
     `${details}`,
     ``,
     `*⏱️ Preference:* ${urgencyText}`,
-    `*💰 Est. Route Base:* ~₦${est.min.toLocaleString()} - ₦${est.max.toLocaleString()} (Kano local)`,
-    `----------------------------------------`,
-    `_Sent via Pelkan Delives Zero-App Portal_`
+    `*💰 Est. Transit Fare:* ~₦${est.min.toLocaleString()} - ₦${est.max.toLocaleString()} (Kano local)`
   ];
+
+  // Append new Market Sourcing rules dynamically
+  if (currentService === 'source') {
+    lines.push(`*🛒 Sourcing Fee:* To be confirmed on WhatsApp (Starts at ₦500 - ₦5,000+ based on difficulty)`);
+    lines.push(`*⏱️ Wait Time:* Free for 20 mins (Extra fee applies after)`);
+  }
+
+  lines.push(`*🚚 Load Size:* To be confirmed on WhatsApp (Bike / Medium / Keke)`);
+  lines.push(`----------------------------------------`);
+  lines.push(`_Sent via Pelkan Delives Zero-App Portal_`);
+  
+  if (currentService === 'source') {
+    lines.push(`_Note: Item cost is paid at shop price with receipt. Our fee is separate. No hidden markups._`);
+  }
 
   return lines.join('\n');
 }
@@ -524,7 +536,7 @@ function initFormValidationAndSubmission() {
     );
 
     if (!isValid) {
-      showToast(isPidgin ? '⚠️ Abeg fill all the required spaces.' : '⚠️ Please complete all required fields.', true);
+      showToast(isPidgin ? '⚠️ Abeg fill all the required spaces.' : '⚠ Please complete all required fields.', true);
       if (firstErrorField) {
         firstErrorField.scrollIntoView({ behavior: 'smooth', block: 'center' });
         firstErrorField.focus();
