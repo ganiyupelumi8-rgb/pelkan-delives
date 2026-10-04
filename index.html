@@ -74,74 +74,79 @@
 
     <!-- Main Content Container -->
     <main class="container">
-      <!-- Hero Section -->
-      <section class="hero-section">
-        <div class="hero-pill" data-i18n="hero_pill">
-          <span>🇳🇬 Kano State Local Dispatch • Zero-App Required</span>
-        </div>
-        <h2 class="hero-title">
-          <span data-i18n="hero_title_1">Send it smart.</span> <br />
-          <span class="highlight" data-i18n="hero_title_2">Move it together.</span>
-        </h2>
-        <p class="hero-subtitle" data-i18n="hero_sub">
-          Pooled transit and market sourcing at local rates. No app downloads, no passwords, no hassle. Direct rider routing to WhatsApp.
-        </p>
+     <!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-pill" data-i18n="hero_pill">
+    <span>🇳🇬 Kano State Local Dispatch • Zero-App Required</span>
+  </div>
 
-        <div class="hero-badges">
-          <span class="hero-badge-item" data-i18n="badge_nosignup">⚡ No Sign-up</span>
-          <span class="hero-badge-item" data-i18n="badge_riders">🛵 Local Kano Riders</span>
-          <span class="hero-badge-item" data-i18n="badge_whatsapp">💬 WhatsApp Checkout</span>
-          <span class="hero-badge-item" data-i18n="badge_fares">💰 Pooled Fares in ₦</span>
-        </div>
-      </section>
+  <h2 class="hero-title">
+    <span data-i18n="hero_title_1">We shop the markets & stores for you.</span><br />
+    <span class="highlight" data-i18n="hero_title_2">We deliver across Kano.</span>
+  </h2>
 
-      <!-- Service Toggle Section -->
-      <section class="service-toggle-section" aria-labelledby="service-heading">
-        <div class="section-label" id="service-heading">
-          <span data-i18n="service_choose_title">Choose Service Type (Zaɓi Aiki)</span>
-          <span class="form-label-hint" data-i18n="service_choose_hint">Tap to switch</span>
-        </div>
+  <p class="hero-subtitle" data-i18n="hero_sub">
+    From Kantin Kwari, Sabon Gari and Farm Center to your nearest supermarket — we buy, package and deliver. No app needed. Just WhatsApp.
+  </p>
 
-        <div class="service-cards-grid" role="radiogroup" aria-label="Select delivery service">
-          <!-- Option A: Buy & Source for Me -->
-          <button
-            type="button"
-            class="service-card selected"
-            id="card-service-source"
-            role="radio"
-            aria-checked="true"
-            tabindex="0"
-          >
-            <div class="badge-selected">✓</div>
-            <div class="service-card-icon" aria-hidden="true">🛍️️</div>
-            <div class="service-card-title" data-i18n="service_source_title">Buy & Source for Me</div>
-            <div class="service-card-sub" data-i18n="service_source_sub">Market Concierge: Kwari, Sabon Gari, Farm Center, Kurmi, Dawanau</div>
-          </button>
+  <div class="hero-badges">
+    <span class="hero-badge-item" data-i18n="badge_nosignup">⚡ No Sign-up</span>
+    <span class="hero-badge-item" data-i18n="badge_riders">🛵 Local Kano Riders</span>
+    <span class="hero-badge-item" data-i18n="badge_whatsapp">💬 WhatsApp Checkout</span>
+    <span class="hero-badge-item" data-i18n="badge_fares">💰 Transparent Fares</span>
+  </div>
+</section>
 
-          <!-- Option B: Pick Up & Deliver Package -->
-          <button
-            type="button"
-            class="service-card"
-            id="card-service-dispatch"
-            role="radio"
-            aria-checked="false"
-            tabindex="0"
-          >
-            <div class="badge-selected">✓</div>
-            <div class="service-card-icon" aria-hidden="true">📦</div>
-            <div class="service-card-title" data-i18n="service_dispatch_title">Pick Up & Deliver</div>
-            <div class="service-card-sub" data-i18n="service_dispatch_sub">Direct Dispatch: Parcels, food, documents across town</div>
-          </button>
-        </div>
+<!-- Service Toggle Section -->
+<section class="service-toggle-section" aria-labelledby="service-heading">
+  <div class="section-label" id="service-heading">
+    <span data-i18n="service_choose_title">Choose Service Type (Zaɓi Aiki)</span>
+    <span class="form-label-hint" data-i18n="service_choose_hint">Tap to switch</span>
+  </div>
 
-        <div class="service-hint-box" id="service-hint-box">
-          <span aria-hidden="true">💡</span>
-          <div id="service-hint-text">
-            <strong>🛍️ Market Concierge Mode:</strong> Our rider visits Kantin Kwari, Sabon Gari, Farm Center, Kurmi, or Dawanau to inspect, negotiate, and purchase items on your behalf before delivering directly to you.
-          </div>
-        </div>
-      </section>
+  <div class="service-cards-grid" role="radiogroup" aria-label="Select delivery service">
+    <!-- Option A: Buy & Source for Me -->
+    <button
+      type="button"
+      class="service-card selected"
+      id="card-service-source"
+      role="radio"
+      aria-checked="true"
+      tabindex="0"
+    >
+      <div class="badge-selected">✓</div>
+      <div class="service-card-icon" aria-hidden="true">🛍️</div>
+      <div class="service-card-title" data-i18n="service_source_title">Buy & Source for Me</div>
+      <div class="service-card-sub" data-i18n="service_source_sub">
+        Markets + Supermarkets: Kwari, Sabon Gari, Farm Center, Shoprite & more
+      </div>
+    </button>
 
+    <!-- Option B: Pick Up & Deliver Package -->
+    <button
+      type="button"
+      class="service-card"
+      id="card-service-dispatch"
+      role="radio"
+      aria-checked="false"
+      tabindex="0"
+    >
+      <div class="badge-selected">✓</div>
+      <div class="service-card-icon" aria-hidden="true">📦</div>
+      <div class="service-card-title" data-i18n="service_dispatch_title">Pick Up & Deliver</div>
+      <div class="service-card-sub" data-i18n="service_dispatch_sub">
+        Direct Dispatch: Parcels, food, documents across town
+      </div>
+    </button>
+  </div>
+
+  <div class="service-hint-box" id="service-hint-box">
+    <span aria-hidden="true">💡</span>
+    <div id="service-hint-text">
+      <strong>🛍️ Market & Store Concierge:</strong> Our rider visits Kantin Kwari, Sabon Gari, Farm Center, or your chosen supermarket. We inspect, negotiate/buy, and deliver to you.
+    </div>
+  </div>
+</section>
       <!-- Main Order Form Card -->
       <section class="form-card" aria-labelledby="order-form-title">
         <div class="form-header">
