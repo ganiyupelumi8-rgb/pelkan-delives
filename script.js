@@ -19,7 +19,7 @@ const ENGLISH_DICTIONARY = {
   brand_tagline: 'We shop Kantin Kwari, Sabon Gari and Farm Center for you and deliver in Kano',
   hero_pill: '🇳🇬 Kano State Local Dispatch • Zero-App Required',
   hero_title_1: 'Your order is handled',
-  hero_title_2: 'personally by Pelumi.',
+  hero_title_2: 'personally by Pelkan, your trusted delivery partner.',
   hero_sub: 'Now taking early orders for local delivery and market runs. No app required—build your order below and check out directly via WhatsApp.',
   badge_nosignup: '⚡ No Sign-up',
   badge_riders: '🛵 Local Kano Riders',
@@ -96,13 +96,13 @@ const PIDGIN_DICTIONARY = {
   brand_tagline: 'We go shop for Kantin Kwari, Sabon Gari and Farm Center for you, con deliver am for Kano',
   hero_pill: '🇳🇬 Kano State Local Dispatch • You No Need Download Any App',
   hero_title_1: 'Your order dey handled',
-  hero_title_2: 'personally by Pelumi.',
+  hero_title_2: 'personally by Pelkan, una trusted delivery padi.',
   hero_sub: 'We don dey take early orders for local delivery and market runs. No app wahala—build your order below make we chat for WhatsApp.',
   badge_nosignup: '⚡ No Sign-up Stress',
   badge_riders: '🛵 Kano Local Riders',
   badge_whatsapp: '💬 WhatsApp Direct Chat',
   badge_fares: '💰 Cheap Shared Price for ₦',
-  service_choose_title: 'Choose Wetyn You Want Us To Do',
+  service_choose_title: 'Choose Wetin You Want Us To Do',
   service_choose_hint: 'Tap to change',
   service_source_title: 'Buy & Source for Me',
   service_source_sub: 'Market Run: Kwari, Sabon Gari, Farm Center, Kurmi, Dawanau',
@@ -110,7 +110,7 @@ const PIDGIN_DICTIONARY = {
   service_dispatch_sub: 'Direct Dispatch: Waybill, food, documents across Kano',
   service_hint_source: '<strong>🛍️ Market Concierge Mode:</strong> Our rider go enter Kantin Kwari, Sabon Gari, Farm Center, Kurmi, or Dawanau go inspect the goods, price am, buy am, and carry am reach your doorstep.',
   service_hint_dispatch: '<strong>📦 Direct Dispatch Mode:</strong> Our rider go pick up your package from your hand, shop, or gate and carry am straight give the person wey get am.',
-  form_header_title: '📝 Wetyn We Go Deliver',
+  form_header_title: '📝 Wetin We Go Deliver',
   quick_sample_title: 'Quick Sample Test (Tap to test fill):',
   chip_sample_kwari: '🛍️ Kwari Atamfa Run',
   chip_sample_buk: '📦 BUK Old to New Campus',
@@ -161,7 +161,7 @@ const PIDGIN_DICTIONARY = {
   step_3_desc: 'Get quick confirmation, rider number, and live update until package reach.',
   support_title: 'Customer Support & Feedback',
   support_sub: 'You get complaint, suggestion, or opinion? Tell us direct!',
-  support_desc: 'For Pelkan Delives, our goal na make sure say moving things and buying from Kano markets dey cheap and easy for you. If rider delay, or you get idea how we fit improve, please write to our management.',
+  support_desc: 'For Pelkan Delives, our goal na make sure say moving things and buying from Kano markets dey affordable and easy for you. If rider delay, or you get idea how we fit improve, please write to our management.',
   support_email_btn: '✉️ Send Email: pelkanhaus@gmail.com',
   support_wa_btn: '💬 WhatsApp Support & Feedback',
   faq_heading: 'Frequently Asked Questions (Questions Wey People Dey Ask)'
@@ -331,8 +331,8 @@ function calculateFareEstimate() {
   const isFarmCenter = pickup.includes('Farm Center') || dropoff.includes('Farm Center');
 
   if (isFarOut(pickup) || isFarOut(dropoff)) {
-    baseMin = 2200;
-    baseMax = 3500;
+    baseMin = 5000;
+    baseMax = 6500;
   } else if (pickup === dropoff && pickup !== 'Other') {
     baseMin = 600;
     baseMax = 900;
