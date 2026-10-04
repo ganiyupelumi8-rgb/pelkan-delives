@@ -1159,3 +1159,17 @@ textarea.form-control {
   border-left-color: var(--primary-red);
   background: #7f1d1d;
 }
+.hero-section {
+  padding: 28px 0 24px;
+}
+
+.hero-title {
+  font-size: 1.85rem;
+  margin-bottom: 12px;
+}
+
+.hero-subtitle {
+  font-size: 0.98rem;
+  max-width: 540px;
+  margin-bottom: 18px;
+}
