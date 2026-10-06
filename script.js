@@ -2,11 +2,11 @@
  * Pelkan Delives - Market Sourcing & Delivery, Kano
  * Lightweight zero-dependency JavaScript engine
  * WhatsApp Routing target: 2348150565192
- * Customer Support: pelkanhaus@gmail.com
+ * Customer Support: hellopelkan@gmail.com
  */
 
 const WHATSAPP_PHONE = '2348150565192';
-const SUPPORT_EMAIL = 'pelkanhaus@gmail.com';
+const SUPPORT_EMAIL = 'hellopelkan@gmail.com';
 
 // State
 let currentService = 'source'; // 'source' (Buy & Source) or 'dispatch' (Pick Up & Deliver)
@@ -85,7 +85,7 @@ const ENGLISH_DICTIONARY = {
   support_title: 'Customer Support & Feedback (Maganar Abokin Ciniki)',
   support_sub: 'Have a complaint, suggestion, or opinion? We want to hear from you directly.',
   support_desc: 'Whether your order went perfectly, ran late, or you have an idea to improve our service, please tell us.',
-  support_email_btn: '✉️ Email Us: pelkanhaus@gmail.com',
+  support_email_btn: '✉️ Email Us: hellopelkan@gmail.com',
   support_wa_btn: '💬 WhatsApp Support & Feedback',
   faq_heading: 'Frequently Asked Questions (Tambayoyin Da Aka Saba Yi)',
   hours_hours: '🕗 Mon-Sat, 8am-6pm',
@@ -167,7 +167,7 @@ const PIDGIN_DICTIONARY = {
   support_title: 'Customer Support & Feedback',
   support_sub: 'You get complaint, suggestion, or opinion? Tell us direct!',
   support_desc: 'If your order go well, if e delay, or you get idea how we fit improve, abeg tell us.',
-  support_email_btn: '✉️ Send Email: pelkanhaus@gmail.com',
+  support_email_btn: '✉️ Send Email: hellopelkan@gmail.com',
   support_wa_btn: '💬 WhatsApp Support & Feedback',
   faq_heading: 'Frequently Asked Questions (Questions Wey People Dey Ask)',
   hours_hours: '🕗 Mon-Sat, 8am-6pm',
